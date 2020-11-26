@@ -36,7 +36,7 @@ function App() {
           </div>
         </div>
         <div className="message-item" ref={message3}>
-          <div className="message">You are a amazing mom</div>
+          <div className="message">You are an amazing mom</div>
         </div>
         <div className="message-item" ref={message4}>
           <div className="message">Thank you for everything</div>
