@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import BirthdayCard from "./BirthdayCard";
 import birthdayPicture from "./birthday.jpg";
 import balloonPicture from "./balloons.jpg";
@@ -13,23 +13,18 @@ const App = () => {
 
   const messagesData = [
     {
-      ref: useRef(),
       src: birthdayPicture,
     },
     {
-      ref: useRef(),
       message: messageTwo,
     },
     {
-      ref: useRef(),
       message: "You are an amazing mom",
     },
     {
-      ref: useRef(),
       message: "Thank you for everything",
     },
     {
-      ref: useRef(),
       src: balloonPicture,
     },
   ];

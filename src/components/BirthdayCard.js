@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
 import "./styles.css";
 import PropTypes from "prop-types";
 
@@ -15,6 +15,7 @@ const BirthdayCard = ({ messagesData }) => {
 
   const renderMessageItems = () => {
     return messagesData.map((element, index) => {
+      element.ref = React.createRef();
       if (index === 0)
         return (
           <div className="message-item active" ref={element.ref} key={index}>
