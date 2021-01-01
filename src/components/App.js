@@ -3,6 +3,7 @@ import BirthdayCard from "./BirthdayCard";
 import birthdayPicture from "./birthday.jpg";
 import balloonPicture from "./balloons.jpg";
 
+//this setup of having the messages passed in as props allow the user to customize or add to the messages sent to the birthday card in a easy manner
 const App = () => {
   const messageTwo = (
     <>
