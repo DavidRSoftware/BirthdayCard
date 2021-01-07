@@ -1,5 +1,4 @@
 import React, { useEffect, useState} from "react";
-import "./styles.css";
 import PropTypes from "prop-types";
 
 const BirthdayCard = ({ messagesData }) => {
