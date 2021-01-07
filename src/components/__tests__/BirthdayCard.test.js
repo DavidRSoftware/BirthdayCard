@@ -13,7 +13,8 @@ beforeEach(() => {
       message: "Message 2",
     },
   ];
-  wrapped = shallow(<BirthdayCard messagesData={messages} />);
+  const title = "Birthday Card";
+  wrapped = shallow(<BirthdayCard messagesData={messages} title={title} />);
 });
 
 it("creates one message item per message object", () => {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState} from "react";
 import PropTypes from "prop-types";
 
-const BirthdayCard = ({ messagesData }) => {
+const BirthdayCard = ({ messagesData, title }) => {
   const [activeIndex, updateActiveIndex] = useState(0);
   //this function causes the message to change every 5 seconds
   useEffect(() => {
@@ -43,7 +43,7 @@ const BirthdayCard = ({ messagesData }) => {
 
   return (
     <div className="main-content my-3 mx-3">
-      <div className="title">Happy Birthday Mom!</div>
+      <div className="title">{title}</div>
 
       <div className="message-inner">{renderMessageItems()}</div>
     </div>
@@ -51,7 +51,8 @@ const BirthdayCard = ({ messagesData }) => {
 };
 
 BirthdayCard.propTypes = {
-  messagesData: PropTypes.arrayOf(PropTypes.object).isRequired 
+  messagesData: PropTypes.arrayOf(PropTypes.object).isRequired, 
+  title: PropTypes.string.isRequired
 };
 
 export default BirthdayCard;

@@ -31,9 +31,11 @@ const App = () => {
     },
   ];
 
+  const title = "Happy Birthday Mom!";
+
   return (
     <div>
-      <BirthdayCard messagesData={messagesData}></BirthdayCard>
+      <BirthdayCard messagesData={messagesData} title={title}></BirthdayCard>
     </div>
   );
 };
